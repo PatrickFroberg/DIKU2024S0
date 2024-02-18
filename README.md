@@ -1,4 +1,4 @@
-# DIKU2024S0
+# DIKU2024S0 - kort gennemgang af c#
 Dette repo er til introduktion af c# for begyndere
 
 Repoet indeholder det færdige produkt, skal man gennemgå dette med deltagerne så brug den oversigt der er herunder **Oversigt over matrialet (til undervisere)**.
@@ -31,7 +31,7 @@ Herfra tager matrialet udgangspunk i det Gameobject der hedder **PotionSpawner**
 ## Variables
 **Forklar:** Variabler ud fra den nævnte class ovenfor i **Set Up**
 
-**Opgave:** Lav en variable der kan erstatte det hardcoded 2 som radius i **spawnPosition**, den nye variable skal ha værdien 5 og defor skal den være af typen int
+**Opgave:** Lav en variable der kan erstatte det hardcoded 2 som radius i **spawnPosition**, den nye variable skal ha værdien 5 og derfor skal den være af typen int
 
 **<mark>  Spil og test  </mark>**
 
@@ -49,7 +49,7 @@ Herfra tager matrialet udgangspunk i det Gameobject der hedder **PotionSpawner**
 
 **Opgave:** Lav en ny class i forlængelse af **SpawnerSample** (efter dens } ) og kald den *LootAngle*, den skal ha 2 int variable **angle** og **step**, den skal også ha en function til at udregne **NextAngle**. Der skal også være en constructor der kan tage et **increment** til brug i **step**. Brug nu den nye class til at udregne angles istedetfor de er hardcoded i **SpawnerSample**
 
-**Din kode burde nu ger se sådan her ud og det virker ikke med vilje (bliver fikset i næste step)**
+**Din kode burde nu gerne se sådan her ud og det virker ikke med vilje (bliver fikset i næste step)**
 
 <pre><code class='language-cs'>
 using UnityEngine;
@@ -105,7 +105,7 @@ public class LootAngle
 
 **Opgave:** Ret koden til med public keywords så det nu virker.
 
-**Din kode burde nu ger se sådan her ud og virke igen**
+**Din kode burde nu gerne se sådan her ud og virke igen**
 
 <pre><code class='language-cs'>
 using UnityEngine;
@@ -159,11 +159,11 @@ public class LootAngle
 
 
 ## Lav en ny MoneySpawner
-For at vise at vi kan genbruge det meste af det vi har lavet nu kan vi lave en ny **MoneySpawner**. Start med at lav et nyt 3dobject i spillet (sphere f.eks.) så vi har noget visuelt vi kan kalde *MoneySpawner*. Sæt derefter dens **Position** tæt på den anden spawner. Vælg **MoneySpawner** og tilføj det component vi har arbejdet med i **PotionSpawner** der hedder **SpawnerSample**. Istedetfor den her nu skal spawn Potions skal vi give den en ny prefab der hedder **MoneyLoot** (dette prefab ligger i .. -> Prefabs -> Tutorial) i det exposed public gameobject der hedder **Object To Spawn**.
+For at vise at vi kan genbruge det meste af det vi har lavet nu kan vi lave en ny **MoneySpawner**. Start med at lav et nyt 3dobject i spillet (sphere f.eks.) så vi har noget visuelt vi kan kalde *MoneySpawner*. Sæt derefter dens **Position** tæt på den anden spawner. Vælg **MoneySpawner** og tilføj det component vi har arbejdet med i **PotionSpawner** der hedder **SpawnerSample**. I stedet for den her nu skal spawn Potions skal vi give den en ny prefab der hedder **MoneyLoot** (dette prefab ligger i .. -> Prefabs -> Tutorial) i det exposed public gameobject der hedder **Object To Spawn**.
 
 **<mark>  Spil og test  </mark>**
 
 
 ## Nedarvning
 
-**Forklar:** kort nedarvning, her kan man bruge **MonoBehaviour** som eksempel men jeg plejer som regl at lave et eksempel med **Animal** der kan have porperties og functions som alle dyr har og derfra lave forskellige dyr som **Dog** og **Cat** extender **Animal** med deres egne properties og functions.
+**Forklar:** kort nedarvning, her kan man bruge **MonoBehaviour** som eksempel men jeg plejer som regel at lave et eksempel med **Animal** der kan have properties og functions som alle dyr har og derfra lave forskellige dyr som **Dog** og **Cat** extender **Animal** med deres egne properties og functions.
