@@ -1,19 +1,27 @@
 # DIKU2024S0
+Dette repo er til introduktion af c# for begyndere
+
+Repoet indeholder det færdige produkt, skal man gennemgå dette med deltagerne så brug den oversigt der er herunder **Oversigt over matrialet (til undervisere)**.
+
+**Hvis man skal bruge dette repo er der en fil der skal unzippes da den er for stor til git: 'Buildings_Albedo.7z' den skal ligge i folderen ..\DIKU2024S0\Assets\UnityTechnologies\Creator Kit - Beginner Code\Art\Texture\Buildings**
+
+## Credits og refrencer
+Alt matriale og den fulde guide er lavet af Unity og kan findes via disse links:
+
 **Ref: https://learn.unity.com/project/creator-kit-beginner-code?uv=2022.3**
 
 **AssetStore Package: https://assetstore.unity.com/packages/templates/tutorials/creator-kit-beginner-code-urp-151986**
 
-**Hvis man skal bruge dette repo er der en fil der skal unzippes da den er for stor til git: 'Buildings_Albedo.7z' den skal ligge i folderen ..\DIKU2024S0\Assets\UnityTechnologies\Creator Kit - Beginner Code\Art\Texture\Buildings**
 
 
-# Oversigt over matrialet (til underviser)
+# Oversigt over matrialet (til undervisere)
 De kommende punkter giver en oversigt over hvad man skal gennemgå i matrialet med deltagerne.
 
 
 ## Set up
 * Lav nyt Unity projekt i **version 2022.3** (eller over).
 * Vælg **3d URP** template
-* Import **AssetStore Package**
+* Import **AssetStore Package** der er nævnt i **Credits og refrencer**
 * Åben den nye importeret **ExampleScene**
 * Spil spillet og hvis de forskellige controls (Det er point and click Action RPG)
 
