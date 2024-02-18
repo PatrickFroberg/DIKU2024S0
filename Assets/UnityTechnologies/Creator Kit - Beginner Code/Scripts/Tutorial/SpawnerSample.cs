@@ -7,23 +7,39 @@ public class SpawnerSample : MonoBehaviour
 
     void Start()
     {
-        int angle = 15;
-        int radius = 5;
-        Vector3 spawnPosition = transform.position;
+        LootAngle myLootAngle = new LootAngle(45);
 
-        Vector3 direction = Quaternion.Euler(0, angle, 0) * Vector3.right;
-        spawnPosition = transform.position + direction * radius;
-        Instantiate(ObjectToSpawn, spawnPosition, Quaternion.identity);
+        SpawnPotion(myLootAngle.NextAngle());
+        SpawnPotion(myLootAngle.NextAngle());
+        SpawnPotion(myLootAngle.NextAngle());
+        SpawnPotion(myLootAngle.NextAngle());
 
-        angle = 55;
-        direction = Quaternion.Euler(0, angle, 0) * Vector3.right;
-        spawnPosition = transform.position + direction * radius;
-        Instantiate(ObjectToSpawn, spawnPosition, Quaternion.identity);
+        void SpawnPotion(int angle)
+        {
+            int radius = 5;
 
-        angle = 95;
-        direction = Quaternion.Euler(0, angle, 0) * Vector3.right;
-        spawnPosition = transform.position + direction * radius;
-        Instantiate(ObjectToSpawn, spawnPosition, Quaternion.identity);
+            Vector3 direction = Quaternion.Euler(0, angle, 0) * Vector3.right;
+            Vector3 spawnPosition = transform.position + direction * radius;
+            Instantiate(ObjectToSpawn, spawnPosition, Quaternion.identity);
+        }
     }
 }
+public class LootAngle
+{
+    int angle;
+    int step;
 
+    public LootAngle(int increment)
+    {
+        step = increment;
+        angle = 0;
+    }
+
+    public int NextAngle()
+    {
+        int currentAngle = angle;
+        angle = Helpers.WrapAngle(angle + step);
+
+        return currentAngle;
+    }
+}
