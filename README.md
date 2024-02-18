@@ -29,7 +29,7 @@ Herfra tager matrialet udgangspunk i det Gameobject der hedder **PotionSpawner**
 
 
 ## Variables
-Forklar Variabler ud fra den nævnte class ovenfor i **Set Up**
+**Forklar:** Variabler ud fra den nævnte class ovenfor i **Set Up**
 
 **Opgave:** Lav en variable der kan erstatte det hardcoded 2 som radius i **spawnPosition**, den nye variable skal ha værdien 5 og defor skal den være af typen int
 
@@ -37,7 +37,7 @@ Forklar Variabler ud fra den nævnte class ovenfor i **Set Up**
 
 
 ## Functions
-Forklar Functions, husk at gennemgå input params og hvorfor det er smart ikke at gentage kode
+**Forklar:** Functions, husk at gennemgå input params og hvorfor det er smart ikke at gentage kode
 
 **Opgave:** Lav en Function der kan Spawn en potion og tage **angle** variable som input, kalde den evt. **SpawnPotion**
 
@@ -45,7 +45,7 @@ Forklar Functions, husk at gennemgå input params og hvorfor det er smart ikke a
 
 
 ## Class
-Forklar classes, men undlad til at starte med public keywork og nedarvning
+**Forklar:** classes, men undlad til at starte med public keywork og nedarvning
 
 **Opgave:** Lav en ny class i forlængelse af **SpawnerSample** (efter dens } ) og kald den *LootAngle*, den skal ha 2 int variable **angle** og **step**, den skal også ha en function til at udregne **NextAngle**. Der skal også være en constructor der kan tage et **increment** til brug i **step**. Brug nu den nye class til at udregne angles istedetfor de er hardcoded i **SpawnerSample**
 
@@ -101,7 +101,7 @@ public class LootAngle
 
 
 ## Public keyword
-Forklar hvorfor at **LootAngle** og **NextAngle** ikke kan kaldes da det mangler public keyword.
+**Forklar:** hvorfor at **LootAngle** og **NextAngle** ikke kan kaldes da det mangler public keyword.
 
 **Opgave:** Ret koden til med public keywords så det nu virker.
 
@@ -166,4 +166,4 @@ For at vise at vi kan genbruge det meste af det vi har lavet nu kan vi lave en n
 
 ## Nedarvning
 
-Forklar kort nedarvning, her kan man bruge **MonoBehaviour** som eksempel men jeg plejer som regl at lave et eksempel med **Animal** der kan have porperties og functions som alle dyr har og derfra lave forskellige dyr som **Dog** og **Cat** extender **Animal** med deres egne properties og functions.
+**Forklar:** kort nedarvning, her kan man bruge **MonoBehaviour** som eksempel men jeg plejer som regl at lave et eksempel med **Animal** der kan have porperties og functions som alle dyr har og derfra lave forskellige dyr som **Dog** og **Cat** extender **Animal** med deres egne properties og functions.
