@@ -67,8 +67,9 @@ public class SpawnerSample : MonoBehaviour
         SpawnPotion(myLootAngle.NextAngle());
         SpawnPotion(myLootAngle.NextAngle());
         SpawnPotion(myLootAngle.NextAngle());
+    }
 
-        void SpawnPotion(int angle)
+    void SpawnPotion(int angle)
         {
             int radius = 5;
 
@@ -76,7 +77,6 @@ public class SpawnerSample : MonoBehaviour
             Vector3 spawnPosition = transform.position + direction * radius;
             Instantiate(ObjectToSpawn, spawnPosition, Quaternion.identity);
         }
-    }
 }
 public class LootAngle
 {
