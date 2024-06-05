@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8189176988599591721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b0cc9bde3e189a468b50101a3f13562, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+  HealthAmount: 10
+--- !u!114 &-5497571511807706118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b0cc9bde3e189a468b50101a3f13562, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+  HealthAmount: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14,22 +42,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Health potion
   ItemSprite: {fileID: 21300000, guid: 3c9b1bd688b22324c9bc5eb12cc12aea, type: 3}
-  Description: 
+  Description: Gives 10 HP
   WorldObjectPrefab: {fileID: 5898196935238221940, guid: 9be663f1d15d2a74395a9b0ff319d423,
     type: 3}
   UsageEffects:
-  - {fileID: 1107657640091256493}
---- !u!114 &1107657640091256493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a164706e4dc5a4b44b645cb6c64d9923, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Description: Add 20% of health
-  HealthPurcentageAmount: 20
+  - {fileID: -8189176988599591721}
