@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8970655177802902928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc6a7308fff017046a8a18b8b1b0a22c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+  PercentageHealthStolen: 20
+  PercentageChance: 80
+  Damage: 50
+  Time: 3
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a96cf71494313b42b0e2459b8aa90d2, type: 3}
+  m_Name: MaWeapon
+  m_EditorClassIdentifier: 
+  ItemName: Long Rake
+  ItemSprite: {fileID: 21300000, guid: 5d0f6ae4987d02846b822915a7301dfa, type: 3}
+  Description: 
+  WorldObjectPrefab: {fileID: -927199367670048503, guid: d34b3591c6e9efe4f8a27a6e8dff55fe,
+    type: 3}
+  Slot: 666
+  MinimumStrength: 50
+  MinimumAgility: 0
+  MinimumDefense: 0
+  EquippedEffects: []
+  HitSounds:
+  - {fileID: 8300000, guid: f310c4275c4a29c4395ab918aac34bbb, type: 3}
+  - {fileID: 8300000, guid: f310c4275c4a29c4395ab918aac34bbb, type: 3}
+  - {fileID: 8300000, guid: 607db0fb0ea77fb4cb04f699e4b31bb2, type: 3}
+  SwingSounds: []
+  Stats:
+    Speed: 10
+    MinimumDamage: 1
+    MaximumDamage: 1
+    MaxRange: 10
+  AttackEffects:
+  - {fileID: -8970655177802902928}
